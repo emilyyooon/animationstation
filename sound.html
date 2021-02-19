@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sound</title>
+
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <audio id="sound">
+    <source src="audio/snc.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+  </audio>
+  <button class="button" onclick="playaudio(), window.open('color.html');" type="button" class="button">&</button>
+  <script>
+    var x=document.getElementById("sound");
+    function playaudio() {
+      x.play();
+    }
+  </script>
+
+</html>

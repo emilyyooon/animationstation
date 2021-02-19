@@ -1,0 +1,107 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: #0626FF;
+  font-size: 3rem;
+  font-family: agenda, sans-serif;
+  color: #93A0FF;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.start:hover {
+  opacity: 0.6;
+}
+
+.button {
+  margin-left: 45rem;
+  margin-top: 5rem;
+  transition: transform .8s;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 25rem;
+  color: #7B8CF1
+}
+
+.button:hover {
+  -webkit-transform: scale(.5);
+  transform: scale(1.15);
+}
+
+.color {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5262CD;
+  animation: change 5s linear 2s infinite alternate;
+}
+
+@keyframes change {
+  from {background-color: #5262CD;}
+  to {background-color: #0626FF;}
+  from {background-color: #0626FF;}
+  to {background-color: #A6AAC6;}
+  from {background-color: #A6AAC6;}
+  to {background-color: #00118C;}
+  from {background-color: #00118C;}
+  to {background-color: #93A0FF;}
+  from {background-color: #93A0FF;}
+  to {background-color: #0E24C7;}
+  from {background-color: #0E24C7;}
+  to {background-color: #5262CD;}
+}
+
+.box {
+  position: relative;
+  display: grid;
+  color: #FFCC0E;
+  padding: 0;
+}
+
+.s {
+  font-size: 15rem;
+  opacity: 0%;
+  -webkit-animation: fadeinout 3s linear forwards;
+  animation: fadeinout 1s linear forwards;
+  animation-delay: 84s;
+}
+
+.n {
+  font-size: 50rem;
+  opacity: 0%;
+  -webkit-animation: fadeinout 1s linear forwards;
+  animation: fadeinout 1s linear forwards;
+  animation-delay: 85s;
+}
+
+.c {
+  font-size: 25rem;
+  opacity: 0%;
+  -webkit-animation: fadeinout 1s linear forwards;
+  animation: fadeinout 1s linear forwards;
+  animation-delay: 86s;
+}
+@-webkit-keyframes fadinout {
+  0%, 100% {opacity: 0;}
+}
+@keyframes fadeinout {
+  0%, 100% {opacity: 0;}
+  50% {opacity: 1;}
+}
